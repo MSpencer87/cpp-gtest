@@ -38,5 +38,10 @@ bool Rando::isPrime(int num)
 **/
 int Rando::nearestToZero(int a, int b)
 {
-	return 0;
+	if (a > b)
+		return b;
+	if (b > a)
+		return a;
+	if (b == a)
+		return b;
 }
